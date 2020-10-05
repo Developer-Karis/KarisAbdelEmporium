@@ -1,0 +1,11 @@
+// Variables
+@import "../scss/modules/variables";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Style
+@import "./modules/_style.scss";
+
+// Font-Awesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
