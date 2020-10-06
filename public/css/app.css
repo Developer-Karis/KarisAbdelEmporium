@@ -9646,8 +9646,61 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-body {
-  background-color: khaki;
+#bgDiscover {
+  background-image: url("../img/cta-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+}
+
+#discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 320px;
+}
+
+#discover h5 {
+  color: white;
+  font-size: 60px;
+}
+
+#discover button {
+  background-color: #ff5252;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+
+#discover button:hover {
+  background-color: white;
+  color: #ff5252;
+}
+
+@media screen and (max-width: 640px) {
+  #discover {
+    padding-top: 200px;
+  }
+  #discover h5 {
+    text-align: center;
+    margin: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #discover {
+    padding-top: 280px;
+  }
+  #discover h5 {
+    text-align: center;
+    margin: 15px;
+  }
 }
 
 /*!
