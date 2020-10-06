@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
 
     <div class="container">
         <!-- titre -->
@@ -29,14 +29,86 @@
                 <li>
                     <button class="modeblanc"></button>
                     <button class="modesombre"></button>
-                    <button class="connexion">connexion</button>
+
+                    <!-- modal -->
+
+                    <button id="myBtn" class="ml-2">connexion</button>
+
+                    <div id="myModal" class="modal1">
+
+
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <div class="row">
+                                <!-- modal gauche -->
+                                <div class="col-6">
+                                    <form>
+                                        <div class="form-group ml-5">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control " id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group ml-5">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-group form-check ml-5">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger ml-5">Submit</button>
+                                    </form>
+                                </div>
+                                <!-- modal droit -->
+                                <div class="col-6">
+                                    <form>
+                                        <div class="form-group ml-5">
+                                            <label for="exampleInputEmail1">Inscription Email address</label>
+                                            <input type="email" class="form-control " id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted">Votre adresse pour recevoir toute les informations.</small>
+                                        </div>
+                                        <div class="form-group ml-5">
+                                            <label for="exampleInputEmail1">Votre adresse </label>
+                                            <input type="email" class="form-control " id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">Exemple : rue vonck 20, 1210 Saint-Josse</small>
+                                        </div>
+                                        <div class="form-group ml-5">
+                                            <label for="exampleInputPassword1">Votre code</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-group form-check ml-5">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Recevoir des publiciter</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger ml-5">Inscription</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
                 </li>
             </ul>
         </nav>
 
     </div>
 
-    
+
+
+
+
+
+
     <!-- Mon Script -->
     <script src="./public/js/main.js" type="module"></script>
 
