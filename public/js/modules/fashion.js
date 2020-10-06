@@ -6,13 +6,6 @@ let arrButtons = Array.from(carouselButtons);
 let imgAll = document.querySelectorAll("img");
 let arrImg = Array.from(imgAll);
 
-arrImg.forEach(element => {
-    element.addEventListener("mouseover", (e) => {
-        e.target.style.transition = "transform 1s";
-        e.target.style.transform = "scale(0.8)";
-    })
-});
-
 let titleAll = document.querySelectorAll("h5");
 console.log(titleAll);
 
@@ -21,7 +14,6 @@ console.log(priceAll);
 
 for (let i = 0; i < arrButtons.length; i++) {
     arrButtons[0].addEventListener("click", () => {
-        arrButtons[i].style.transition = "transform 1s";
         for (let i = 0; i < arrImg.length; i++) {
             arrImg[i].style.transition = "transform 1s";
             arrImg[0].src = "./public/img/products_mini/product-luxry-sofa.jpg";

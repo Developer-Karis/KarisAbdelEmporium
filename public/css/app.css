@@ -9725,6 +9725,11 @@ a.text-dark:hover, a.text-dark:focus {
   width: 250px;
   margin: 5px;
   cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#fashionProducts img:hover {
+  transform: scale(1.08);
 }
 
 .infosProducts {
