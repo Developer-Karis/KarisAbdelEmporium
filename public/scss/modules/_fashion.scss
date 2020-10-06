@@ -11,6 +11,7 @@
     img {
         width: 250px;
         margin: 5px;
+        cursor: pointer;
     }
 }
 
@@ -62,4 +63,28 @@
         width: 18px;
         height: 18px;
     }
+}
+
+// Media Query
+
+// Smartphone
+@media screen and (max-width: 640px) {
+    #fashionProducts {
+        h1 {
+            text-align: center;
+            margin: 15px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+            padding: 0;
+        }
+    }
+}
+
+// Laptop and tablets
+@media (min-width: 768px) and (max-width: 1280px) {
 }

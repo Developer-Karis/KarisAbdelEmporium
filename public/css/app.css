@@ -9646,6 +9646,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 #bgDiscover {
   background-image: url("../img/cta-bg.jpg");
   background-size: cover;
@@ -9662,12 +9666,13 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 320px;
 }
 
-#discover h5 {
+#discover h1 {
   color: white;
   font-size: 60px;
 }
 
-#discover button {
+#discover a {
+  text-decoration: none;
   background-color: #ff5252;
   text-transform: uppercase;
   padding: 8px 15px;
@@ -9678,7 +9683,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 20px;
 }
 
-#discover button:hover {
+#discover a:hover {
   background-color: white;
   color: #ff5252;
 }
@@ -9687,7 +9692,7 @@ a.text-dark:hover, a.text-dark:focus {
   #discover {
     padding-top: 200px;
   }
-  #discover h5 {
+  #discover h1 {
     text-align: center;
     margin: 15px;
   }
@@ -9697,7 +9702,7 @@ a.text-dark:hover, a.text-dark:focus {
   #discover {
     padding-top: 280px;
   }
-  #discover h5 {
+  #discover h1 {
     text-align: center;
     margin: 15px;
   }
@@ -9719,6 +9724,7 @@ a.text-dark:hover, a.text-dark:focus {
 #fashionProducts img {
   width: 250px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .infosProducts {
@@ -9774,6 +9780,21 @@ a.text-dark:hover, a.text-dark:focus {
 .carouselButton input {
   width: 18px;
   height: 18px;
+}
+
+@media screen and (max-width: 640px) {
+  #fashionProducts h1 {
+    text-align: center;
+    margin: 15px;
+  }
+  #fashionProducts img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0;
+  }
 }
 
 /*!
