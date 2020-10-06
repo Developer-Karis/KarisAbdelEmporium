@@ -9703,6 +9703,79 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+#fashionProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-bottom: 300px;
+}
+
+#fashionProducts h1 {
+  margin-bottom: 50px;
+}
+
+#fashionProducts img {
+  width: 250px;
+  margin: 5px;
+}
+
+.infosProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.infosProducts span {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.infosProducts #infos {
+  text-align: center;
+  margin: 20px;
+}
+
+.infosProducts .salePrice {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.infosProducts1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px !important;
+}
+
+.infosProducts1 span {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+#sale {
+  border-radius: 100%;
+  background-color: #ff5252;
+  padding: 30px 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.carouselButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.carouselButton input {
+  width: 18px;
+  height: 18px;
+}
+
 /*!
  * Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
