@@ -9646,8 +9646,36 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-body {
-  background-color: blue;
+.titreEmpo {
+  text-align: center;
+  margin: 50px;
+}
+
+.navRow {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.modeblanc {
+  height: 15px;
+  background-color: white;
+  border-radius: 20%;
+  border: solid 1px;
+}
+
+.modesombre {
+  height: 15px;
+  background-color: black;
+  border-radius: 20%;
+  border: solid 1px gray;
+}
+
+.connexion {
+  background-color: gray;
+  color: white;
+  border: solid 1px;
+  height: 30px;
 }
 
 /*!
