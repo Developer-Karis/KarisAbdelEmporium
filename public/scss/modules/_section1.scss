@@ -2,6 +2,10 @@
     text-align: center;
     margin: 50px;
 }
+
+nav{
+    margin-bottom: 40px;
+}
 .navRow{
     display: flex;
     justify-content: space-around;
@@ -25,8 +29,16 @@
     border: solid 1px ;
     height: 30px;
 }
+.navPlus{
+    display: none;
+}
 
 // Modal
+
+.center{
+    text-align: center;
+   
+}
 
 .modal1 {
     display: none;
@@ -43,17 +55,16 @@
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
+    left: 0;
     border: 1px solid #888;
-    width: 80%;
-    height: 500px;
+    width: 35%;
+    height: 350px;
 }
-
 
 .modal-content p {
     text-align: center;
     font-size: 50px;
     font-family: 'Lato';
-    
 }
 
 .close {
@@ -65,7 +76,84 @@
     padding: 0 10px 0 0;
     font-weight: bold;
 }
+
 .form-control{
-    width: 500px!important;
-   
+    width: 400px!important;
+    margin: auto!important;
 }
+
+.inscription{
+    border: solid 1px black;
+    font-size: 25px !important;
+    width: 150px!important;
+}
+
+
+// Modal 2
+
+
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    height: 500px;
+}
+
+
+.modal-content2 p {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lato';
+    
+}
+
+// Media Query
+
+    // Tablette
+
+@media (min-width: 768px) and (max-width: 1280px){
+
+
+    // modal
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        border: 1px solid #888;
+        width: 50%;
+        height: 350px;
+    }
+
+    .form-control{
+        width: 200px!important;
+    }
+    
+    .inscription{
+        border: solid 1px black;
+        font-size: 25px !important;
+        width: 150px!important;
+    }
+    
+}
+
+    // smartphone
+
+@media (max-width: 767px){
+
+    .navRow{
+        display: none;
+    }
+    .navPlus{
+        display: flex!important;
+        justify-content: flex-end;
+        margin: 30px;
+        font-size: 15px;
+    }
+
+    // page navbar
+
+
+}
+

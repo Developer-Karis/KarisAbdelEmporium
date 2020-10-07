@@ -1,0 +1,41 @@
+.titreProduct{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imgProducts{
+    height: 250px;
+    width: 400px;
+    background-size: cover;
+    padding: 20px;
+    .h5{
+        margin-top: 2000px;
+    }
+}
+
+.infosProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #infos {
+        text-align: center;
+        margin: 20px;
+    }
+    .salePrice {
+        color: grey;
+        text-decoration: line-through;
+    }
+}
+
+span {
+    color: #ff5252;
+    font-weight: bold;
+}
+#sale {
+    border-radius: 100%;
+    background-color: #ff5252;
+    padding: 30px 20px;
+    color: white;
+    font-size: 15px;
+}
