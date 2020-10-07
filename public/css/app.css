@@ -9714,7 +9714,7 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 
 #fashionProducts h1 {
@@ -9722,14 +9722,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #fashionProducts img {
-  width: 250px;
+  width: 270px;
   margin: 5px;
   cursor: pointer;
-  transition: transform 0.5s ease;
-}
-
-#fashionProducts img:hover {
-  transform: scale(1.08);
 }
 
 .infosProducts {
@@ -9800,6 +9795,88 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 30px;
     padding: 0;
   }
+}
+
+.infoCustomers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.infoCust {
+  text-align: center;
+  background-color: #f3f2f3;
+  padding: 50px 70px;
+  font-size: 15px;
+}
+
+.infoCust:hover {
+  background-color: #dd4545;
+  color: white;
+}
+
+.infoCust button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #343a40;
+  color: white;
+  padding: 10px 15px;
+}
+
+.infoCust button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 70px;
+  background-color: #343a40;
+}
+
+footer .row {
+  margin: 80px;
+  width: 55%;
+}
+
+footer h5 {
+  color: white;
+}
+
+footer p {
+  font-size: 16px;
+  white-space: pre-line;
+}
+
+footer button {
+  border-radius: 5px;
+  border: 2px solid #6c757d;
+  color: #6c757d;
+  padding: 4px 10px;
+  margin: 5px;
+  background-color: #343a40;
+  font-size: 17px;
+}
+
+footer button:hover {
+  background-color: white;
+  color: black;
+}
+
+.bgBlackFooter {
+  text-align: center;
+  font-size: 21px;
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+.paraFooter {
+  font-size: 17px;
 }
 
 /*!

@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 70px;
+    background-color: #343a40;
+    .row {
+        margin: 80px;
+        width: 55%;
+    }
+    h5 {
+        color: white;
+    }
+    p {
+        font-size: 16px;
+        white-space: pre-line;
+    }
+    button {
+        border-radius: 5px;
+        border: 2px solid #6c757d;
+        color: #6c757d;
+        padding: 4px 10px;
+        margin: 5px;
+        background-color: #343a40;
+        font-size: 17px;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.bgBlackFooter {
+    text-align: center;
+    font-size: 21px;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+.paraFooter {
+    font-size: 17px;
+}

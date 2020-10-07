@@ -12,6 +12,16 @@ console.log(titleAll);
 let priceAll = document.querySelectorAll("span");
 console.log(priceAll);
 
+arrImg.forEach(element => {
+    element.style.transition = "all .5s";
+    element.addEventListener("mouseover", (e) => {
+        e.target.style.transform = "scale(1.2)";
+    });
+    element.addEventListener("mouseout", (e) => {
+        e.target.style.transform = "scale(1)";
+    })
+});
+
 for (let i = 0; i < arrButtons.length; i++) {
     arrButtons[0].addEventListener("click", () => {
         for (let i = 0; i < arrImg.length; i++) {
