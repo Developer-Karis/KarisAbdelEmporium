@@ -11,6 +11,8 @@ arrRow[3].style.display = "none";
 
 window.onload = imgOne();
 
+var stopTimeoutAuto;
+
 function imgOne() {
     arrRow[1].style.transition = "1.5s";
     arrRow[1].style.opacity = "0";
@@ -27,11 +29,11 @@ function imgOne() {
         arrRow[0].style.opacity = "1";
     }, 500);
 
-    setTimeout(() => {
-        carouselButtons[0].removeAttribute("checked");
-        carouselButtons[1].setAttribute("checked", '');
-        imgTwo();
-    }, 5000);
+    // stopTimeoutAuto = setTimeout(() => {
+    //     carouselButtons[0].removeAttribute("checked");
+    //     carouselButtons[1].setAttribute("checked", '');
+    //     imgTwo();
+    // }, 5000);
 }
 
 function imgTwo() {
@@ -50,11 +52,11 @@ function imgTwo() {
         arrRow[1].style.opacity = "1";
     }, 500);
 
-    setTimeout(() => {
-        carouselButtons[1].removeAttribute("checked");
-        carouselButtons[2].setAttribute("checked", '');
-        imgThree();
-    }, 5000);
+    // stopTimeoutAuto = setTimeout(() => {
+    //     carouselButtons[1].removeAttribute("checked");
+    //     carouselButtons[2].setAttribute("checked", '');
+    //     imgThree();
+    // }, 5000);
 }
 
 function imgThree() {
@@ -73,11 +75,11 @@ function imgThree() {
         arrRow[2].style.opacity = "1";
     }, 500);
 
-    setTimeout(() => {
-        carouselButtons[2].removeAttribute("checked");
-        carouselButtons[3].setAttribute("checked", '');
-        imgFour();
-    }, 5000);
+    // stopTimeoutAuto = setTimeout(() => {
+    //     carouselButtons[2].removeAttribute("checked");
+    //     carouselButtons[3].setAttribute("checked", '');
+    //     imgFour();
+    // }, 5000);
 }
 
 function imgFour() {
@@ -96,11 +98,15 @@ function imgFour() {
         arrRow[3].style.opacity = "1";
     }, 500);
 
-    setTimeout(() => {
-        carouselButtons[3].removeAttribute("checked");
-        carouselButtons[0].setAttribute("checked", '');
-        imgOne();
-    }, 5000);
+    // stopTimeoutAuto = setTimeout(() => {
+    //     carouselButtons[3].removeAttribute("checked");
+    //     carouselButtons[0].setAttribute("checked", '');
+    //     imgOne();
+    // }, 5000);
+}
+
+function StopAuto() {
+    clearTimeout(stopTimeoutAuto);
 }
 
 arrButtons[0].addEventListener("click", () => {
