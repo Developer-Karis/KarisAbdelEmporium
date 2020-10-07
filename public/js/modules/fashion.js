@@ -2,43 +2,119 @@
 let carouselButtons = document.querySelectorAll("input");
 let arrButtons = Array.from(carouselButtons);
 
-// Récupérer les images du Carousel
-let imgAll = document.querySelectorAll("img");
-let arrImg = Array.from(imgAll);
+let myRowCarousel = document.querySelectorAll("#fashionProducts .carous");
+let arrRow = Array.from(myRowCarousel);
 
-let titleAll = document.querySelectorAll("h5");
-console.log(titleAll);
+arrRow[1].style.display = "none";
+arrRow[2].style.display = "none";
+arrRow[3].style.display = "none";
 
-let priceAll = document.querySelectorAll("span");
-console.log(priceAll);
+window.onload = imgOne();
 
-arrImg.forEach(element => {
-    element.style.transition = "all .5s";
-    element.addEventListener("mouseover", (e) => {
-        e.target.style.transform = "scale(1.2)";
-    });
-    element.addEventListener("mouseout", (e) => {
-        e.target.style.transform = "scale(1)";
-    })
-});
+function imgOne() {
+    arrRow[1].style.transition = "1.5s";
+    arrRow[1].style.opacity = "0";
+    arrRow[2].style.transition = "1.5s";
+    arrRow[2].style.opacity = "0";
+    arrRow[3].style.transition = "1.5s";
+    arrRow[3].style.opacity = "0";
+    setTimeout(() => {
+        arrRow[1].style.display = "none";
+        arrRow[2].style.display = "none";
+        arrRow[3].style.display = "none";
+        arrRow[0].style.display = "flex";
+        arrRow[0].style.transition = "1.5s";
+        arrRow[0].style.opacity = "1";
+    }, 500);
 
-for (let i = 0; i < arrButtons.length; i++) {
-    arrButtons[0].addEventListener("click", () => {
-        for (let i = 0; i < arrImg.length; i++) {
-            arrImg[i].style.transition = "transform 1s";
-            arrImg[0].src = "./public/img/products_mini/product-luxry-sofa.jpg";
-            arrImg[1].src = "./public/img/products_mini/product-gloves.jpg";
-            arrImg[3].src = "./public/img/products_mini/product-bag.jpg";
-            arrImg[2].src = "./public/img/products_mini/product-cups.jpg";
-        }
-    })
-
-    arrButtons[1].addEventListener("click", () => {
-        for (let i = 0; i < arrImg.length; i++) {
-            arrImg[0].src = "./public/img/products_mini/product-bed.jpg";
-            arrImg[1].src = "./public/img/products_mini/product-modern-sofa.jpg";
-            arrImg[2].src = "./public/img/products_mini/product-plates.jpg";
-            arrImg[3].src = "./public/img/products_mini/product-tshitr.jpg";
-        }
-    })
+    setTimeout(() => {
+        carouselButtons[0].removeAttribute("checked");
+        carouselButtons[1].setAttribute("checked", '');
+        imgTwo();
+    }, 5000);
 }
+
+function imgTwo() {
+    arrRow[0].style.transition = "1.5s";
+    arrRow[0].style.opacity = "0";
+    arrRow[2].style.transition = "1.5s";
+    arrRow[2].style.opacity = "0";
+    arrRow[3].style.transition = "1.5s";
+    arrRow[3].style.opacity = "0";
+    setTimeout(() => {
+        arrRow[0].style.display = "none";
+        arrRow[2].style.display = "none";
+        arrRow[3].style.display = "none";
+        arrRow[1].style.display = "flex";
+        arrRow[1].style.transition = "1.5s";
+        arrRow[1].style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+        carouselButtons[1].removeAttribute("checked");
+        carouselButtons[2].setAttribute("checked", '');
+        imgThree();
+    }, 5000);
+}
+
+function imgThree() {
+    arrRow[0].style.transition = "1.5s";
+    arrRow[0].style.opacity = "0";
+    arrRow[1].style.transition = "1.5s";
+    arrRow[1].style.opacity = "0";
+    arrRow[3].style.transition = "1.5s";
+    arrRow[3].style.opacity = "0";
+    setTimeout(() => {
+        arrRow[0].style.display = "none";
+        arrRow[1].style.display = "none";
+        arrRow[3].style.display = "none";
+        arrRow[2].style.display = "flex"
+        arrRow[2].style.transition = "1.5s";
+        arrRow[2].style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+        carouselButtons[2].removeAttribute("checked");
+        carouselButtons[3].setAttribute("checked", '');
+        imgFour();
+    }, 5000);
+}
+
+function imgFour() {
+    arrRow[0].style.transition = "1.5s";
+    arrRow[0].style.opacity = "0";
+    arrRow[1].style.transition = "1.5s";
+    arrRow[1].style.opacity = "0";
+    arrRow[2].style.transition = "1.5s";
+    arrRow[2].style.opacity = "0";
+    setTimeout(() => {
+        arrRow[0].style.display = "none";
+        arrRow[1].style.display = "none";
+        arrRow[2].style.display = "none";
+        arrRow[3].style.display = "flex";
+        arrRow[3].style.transition = "1.5s";
+        arrRow[3].style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+        carouselButtons[3].removeAttribute("checked");
+        carouselButtons[0].setAttribute("checked", '');
+        imgOne();
+    }, 5000);
+}
+
+arrButtons[0].addEventListener("click", () => {
+    imgOne();
+})
+
+arrButtons[1].addEventListener("click", () => {
+    imgTwo();
+})
+
+arrButtons[2].addEventListener("click", () => {
+    imgThree();
+})
+
+arrButtons[3].addEventListener("click", () => {
+    imgFour();
+})

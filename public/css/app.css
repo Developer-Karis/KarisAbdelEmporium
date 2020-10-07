@@ -9714,7 +9714,7 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 #fashionProducts h1 {
@@ -9722,9 +9722,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #fashionProducts img {
+  height: 212.63px;
   width: 270px;
   margin: 5px;
   cursor: pointer;
+}
+
+#fashionProducts .row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .infosProducts {
@@ -9797,6 +9803,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  #fashionProducts .row {
+    text-align: center;
+  }
+}
+
 .infoCustomers {
   display: flex;
   justify-content: center;
@@ -9828,6 +9840,12 @@ a.text-dark:hover, a.text-dark:focus {
 .infoCust button:hover {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .infoCust {
+    margin-top: 40px;
+  }
 }
 
 footer {
@@ -9865,6 +9883,7 @@ footer button {
 footer button:hover {
   background-color: white;
   color: black;
+  border: 2px solid black;
 }
 
 .bgBlackFooter {
@@ -9877,6 +9896,28 @@ footer button:hover {
 
 .paraFooter {
   font-size: 17px;
+}
+
+@media screen and (max-width: 640px) {
+  footer .row {
+    width: 100%;
+  }
+  footer .row .col-lg-4 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  footer .row {
+    width: 100%;
+  }
+  .infoCust {
+    text-align: center;
+    height: 521px;
+  }
+  .infoCust h5 {
+    height: 72px;
+  }
 }
 
 /*!

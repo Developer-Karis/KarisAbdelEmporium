@@ -26,6 +26,7 @@ footer {
         &:hover {
             background-color: white;
             color: black;
+            border: 2px solid black;
         }
     }
 }
@@ -40,4 +41,35 @@ footer {
 
 .paraFooter {
     font-size: 17px;
+}
+
+// Media Query
+
+@media screen and (max-width: 640px) {
+    footer {
+        .row {
+            width: 100%;
+            .col-lg-4 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768) and (max-width: 1024) {
+    
+}
+
+// Tablets
+@media (min-width: 1024px) and (max-width: 1366px) {
+    footer .row {
+        width: 100%;
+    }
+    .infoCust {
+        text-align: center;
+        height: 521px;
+        h5 {
+            height: 72px;
+        }
+    }
 }

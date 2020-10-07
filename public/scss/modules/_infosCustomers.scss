@@ -27,3 +27,11 @@
         }
     }
 }
+
+// Media Query
+
+@media screen and (max-width: 640px) {
+    .infoCust {
+        margin-top: 40px;
+    }
+}
