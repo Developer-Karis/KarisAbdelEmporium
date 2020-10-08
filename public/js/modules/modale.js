@@ -9,7 +9,8 @@ let myInscr = document.querySelectorAll('p')[0]
 let span = document.getElementsByClassName("close")[0];
 let span1 = document.querySelectorAll("span")[1];
 
-let abdel = document.querySelectorAll('p')[0]
+let connModal = document.querySelectorAll('p')[1]
+
 
 // avec le btn connexion de la nav
 
@@ -42,3 +43,17 @@ span1.onclick = function () {
     modal.style.display = "none";
 }
 
+// avec le btn connexion
+
+
+connModal.addEventListener('click', () => {
+
+    modal.style.display = "block"
+    modal2.style.display = "none";
+
+})
+
+span1.onclick = function () {
+    modal2.style.display = "none";
+    modal.style.display = "none";
+}

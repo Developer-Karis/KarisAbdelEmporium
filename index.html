@@ -10,7 +10,7 @@
 
 <body>
 
-
+    <!-- titre -->
 
     <!-- titre -->
 
@@ -21,12 +21,24 @@
     <nav>
         <div class="container">
             <ul class="navRow">
-                <a href="#home"><li class="souligner">HOME</li</a>
-                <a href="#product"><li class="souligner">PRODUCT</li></a>
-                <a href="#blog"><li class="souligner">BLOG</li></a>
-                <a href="#elements"><li class="souligner">ELEMENTS</li></a>
-                <a href="#about"><li class="souligner">ABOUT</li></a>
-                <a href="#contact1"><li class="souligner">CONTACT</li></a>
+                <a href="#home">
+                    <li class="souligner">HOME</li>
+                </a>
+                <a href="#product">
+                    <li class="souligner">PRODUCT</li>
+                </a>
+                <a href="#blog">
+                    <li class="souligner">BLOG</li>
+                </a>
+                <a href="#elements">
+                    <li class="souligner">ELEMENTS</li>
+                </a>
+                <a href="#about">
+                    <li class="souligner">ABOUT</li>
+                </a>
+                <a href="#contact1">
+                    <li class="souligner">CONTACT</li>
+                </a>
                 <li>
                     <button class="modeblanc"></button>
                     <button class="modesombre"></button>
@@ -105,15 +117,22 @@
                                     <input type="checkbox" class="form-check-input" id="exampleCheck13">
                                     <label class="form-check-label" for="exampleCheck1">Recevoir des publiciter</label>
                                 </div>
-
-                                <button class="btn btn-danger ml-5">Inscription</button>
-
-                            </form>
+                                <div class="conModal">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <button class="btn btn-danger ml-5">Inscription</button>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <p class="connexionModal">Connexion</p>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
-                </li>
 
-            </ul>
+                        </form>
+                    </div>
+        </div>
+        </li>
+
+        </ul>
         </div>
     </nav>
 
@@ -131,7 +150,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui libero hic <br> architecto
                         beatae
                         iusto possimus nesciunt ab ipsam exercitationem.</p>
-                    <button href="#product">SALE ITEMS</button>
+                    <a href="#product"><button>SALE ITEMS</button></a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 p-0 ">
                     <img src="./public/img/slider-1.jpg" class="bannerimg" alt="">
@@ -143,128 +162,134 @@
     <!-- Living room, sale items, clothes. -->
 
     <div class="section3cent">
-
-        <div class="Living">
-            <h5>Living Room</h5>
-            <h4></h4>
-
-        </div>
-        <div class="sale">
-            <h5>Sale items</h5>
-            <h4></h4>
-        </div>
-        <div class="clothes">
-            <h5>Colthes</h5>
-            <h4></h4>
-        </div>
-
-    </div>
-
-    <!-- Recents Products  -->
-
-    <div id="product" class="container">
-
-        <h3  class="titreProduct">Recents Products</h3>
-
         <div class="row">
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-
-                <div class="center">
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="imgProducts" alt="">
-                    <h5>Luxry Sofa</h5>
-                    <span>$600.00</span>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 m-0">
+                <div class="Living">
+                    <h5>Living Room</h5>
+                    <h4></h4>
                 </div>
             </div>
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-
-                <div class="center">
-                    <img src="./public/img/products_mini/product-gloves.jpg" class="imgProducts" alt="">
-                    <div class="infosProducts">
-                        <span id="sale">SALE !</span>
-                        <div id="infos">
-                            <h5>Leather Gloves</h5>
-                            <span class="salePrice">$34.00</span>
-                            <span>$27.00</span>
-                        </div>
-                    </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 m-0">
+                <div class="sale">
+                    <h5>Sale items</h5>
+                    <h4></h4>
                 </div>
             </div>
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-
-                <div class="center">
-                    <img src="./public/img/products_mini/product-cups.jpg" class="imgProducts" alt="">
-                    <h5>Colorful Bowl</h5>
-                    <span>$18.00</span>
-                </div>
-
-            </div>
-        </div>
-
-
-
-        <div class="row">
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-bag.jpg" class="imgProducts" alt="">
-                    <div class="infosProducts">
-                        <span id="sale">SALE !</span>
-                        <div id="infos">
-                            <h5>Women Bag</h5>
-                            <span class="salePrice">$420.00</span>
-                            <span>$350.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-tshitr.jpg" class="imgProducts" alt="">
-                    <h5>Minimal T-shirt</h5>
-                    <span>$15.00</span>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-plates.jpg" class="imgProducts" alt="">
-                    <h5>Plates Set</h5>
-                    <span>$30.00</span>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" class="imgProducts" alt="">
-                    <h5>Modern Sofa</h5>
-                    <span>$900.00</span>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-bed.jpg" class="imgProducts" alt="">
-                    <h5>Bed Linen</h5>
-                    <span>$79.00</span>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
-                <div class="center">
-                    <img src="./public/img/products_mini/product-shoes.jpg" class="imgProducts" alt="">
-                    <h5>Minimal Shoes</h5>
-                    <span>$60.00</span>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 m-0">
+                <div class="clothes">
+                    <h5>Clothes</h5>
+                    <h4></h4>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Recents Products  -->
+    <section id="product">
+
+        <div class="container">
+
+            <h3 class="titreProduct">Recents Products</h3>
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="imgProducts" alt="">
+                        <h5>Luxry Sofa</h5>
+                        <span>$600.00</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-gloves.jpg" class="imgProducts" alt="">
+                        <div class="infosProducts">
+                            <span id="sale">SALE !</span>
+                            <div id="infos">
+                                <h5>Leather Gloves</h5>
+                                <span class="salePrice">$34.00</span>
+                                <span>$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-cups.jpg" class="imgProducts" alt="">
+                        <h5>Colorful Bowl</h5>
+                        <span>$18.00</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-bag.jpg" class="imgProducts" alt="">
+                        <div class="infosProducts">
+                            <span id="sale">SALE !</span>
+                            <div id="infos">
+                                <h5>Women Bag</h5>
+                                <span class="salePrice">$420.00</span>
+                                <span>$350.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-tshitr.jpg" class="imgProducts" alt="">
+                        <h5>Minimal T-shirt</h5>
+                        <span>$15.00</span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-plates.jpg" class="imgProducts" alt="">
+                        <h5>Plates Set</h5>
+                        <span>$30.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" class="imgProducts" alt="">
+                        <h5>Modern Sofa</h5>
+                        <span>$900.00</span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-bed.jpg" class="imgProducts" alt="">
+                        <h5>Bed Linen</h5>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <div class="center">
+                        <img src="./public/img/products_mini/product-shoes.jpg" class="imgProducts" alt="">
+                        <h5>Minimal Shoes</h5>
+                        <span>$60.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Discover Products -->
     <section id="blog" class="mt-5">
         <div id="bgDiscover">
@@ -285,7 +310,7 @@
             <!-- Fashion Products -->
             <!-- Carousel Img One -->
             <div class="row carous">
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6 test">
                     <div class="parentImg">
                         <div class="imagesCarous bg-one">
 
@@ -296,7 +321,7 @@
                         <span>$600.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-two">
 
@@ -311,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-three">
 
@@ -322,7 +347,7 @@
                         <span>$18.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-four">
 
@@ -340,7 +365,7 @@
             </div>
             <!-- Carousel Img Two -->
             <div class="row carous">
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-five">
 
@@ -351,7 +376,7 @@
                         <span>$400.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-six">
 
@@ -366,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-seven">
 
@@ -377,7 +402,7 @@
                         <span>$30.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-eight">
 
@@ -395,7 +420,7 @@
             </div>
             <!-- Carousel Img Three -->
             <div class="row carous">
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-nine">
 
@@ -406,7 +431,7 @@
                         <span>$300.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-ten">
 
@@ -421,7 +446,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-eleven">
 
@@ -432,7 +457,7 @@
                         <span>$50.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-twelve">
 
@@ -450,7 +475,7 @@
             </div>
             <!-- Carousel Img Four -->
             <div class="row carous">
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-thirteen">
 
@@ -461,7 +486,7 @@
                         <span>$600.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-fourteen">
 
@@ -476,7 +501,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-fifteen">
 
@@ -487,7 +512,7 @@
                         <span>$18.00</span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="col-lg-3 col-sm-3 col-md-6">
                     <div class="parentImg">
                         <div class="imagesCarous bg-sixteen">
 
@@ -598,22 +623,6 @@
             <p class="text-secondary">COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Mon Script -->
     <script src="./public/js/main.js" type="module"></script>

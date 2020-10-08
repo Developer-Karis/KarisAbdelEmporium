@@ -1,12 +1,11 @@
 .section3cent{
-    display: flex;
     margin-top: 40px;
 }
 
 .Living{
     background-image: url(../../../public/img/services/service-1.jpg);
     height: 200px;
-    width: 33%;
+  
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -35,7 +34,7 @@
 .sale{
     background-image: url(../../../public/img/services/service-2.jpg);
     height: 200px;
-    width: 33%;
+   
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -66,7 +65,6 @@
 .clothes{
     background-image: url(../../../public/img/services/slider-3.jpg);
     height: 200px;
-    width: 33%;
     background-size: cover;
     display: flex;
     flex-direction: column;

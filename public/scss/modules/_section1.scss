@@ -119,6 +119,21 @@ nav{
     
 }
 
+.connexionModal{
+    border: solid 1px black;
+    font-size: 25px !important;
+    width: 150px!important;
+    margin: 0;
+    margin-right: 20px!important;
+    
+}
+
+.conModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 // Media Query
 
     // Tablette
@@ -152,18 +167,9 @@ nav{
 
 @media (max-width: 767px){
 
-    .navRow{
+    .souligner{
         display: none;
     }
-    .navPlus{
-        display: flex!important;
-        justify-content: flex-end;
-        margin: 30px;
-        font-size: 15px;
-    }
-
-    // page navbar
-
 
 }
 

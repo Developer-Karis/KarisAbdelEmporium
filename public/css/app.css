@@ -9822,6 +9822,20 @@ nav {
   font-family: 'Lato';
 }
 
+.connexionModal {
+  border: solid 1px black;
+  font-size: 25px !important;
+  width: 150px !important;
+  margin: 0;
+  margin-right: 20px !important;
+}
+
+.conModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
   .modal-content {
     background-color: #fefefe;
@@ -9841,14 +9855,8 @@ nav {
 }
 
 @media (max-width: 767px) {
-  .navRow {
+  .souligner {
     display: none;
-  }
-  .navPlus {
-    display: flex !important;
-    justify-content: flex-end;
-    margin: 30px;
-    font-size: 15px;
   }
 }
 
@@ -9867,7 +9875,6 @@ nav {
 .banner {
   margin-top: 30px;
   background-position: 75%;
-  height: 55vh;
   background-size: 33%;
   background-color: whitesmoke;
   margin-top: 1em;
@@ -9901,19 +9908,17 @@ nav {
   margin-top: 20px;
   background-position: 75%;
   height: 400px;
-  width: 400px !important;
+  width: 350px !important;
   background-size: 100% !important;
 }
 
 .section3cent {
-  display: flex;
   margin-top: 40px;
 }
 
 .Living {
   background-image: url(../../../public/img/services/service-1.jpg);
   height: 200px;
-  width: 33%;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -9944,7 +9949,6 @@ nav {
 .sale {
   background-image: url(../../../public/img/services/service-2.jpg);
   height: 200px;
-  width: 33%;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -9975,7 +9979,6 @@ nav {
 .clothes {
   background-image: url(../../../public/img/services/slider-3.jpg);
   height: 200px;
-  width: 33%;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -10010,9 +10013,14 @@ nav {
 
 .imgProducts {
   height: 250px;
-  width: 350px;
+  width: 320px;
   background-size: cover;
   padding: 20px;
+  transition: 2s;
+}
+
+.imgProducts:hover {
+  transform: scale(1.2);
 }
 
 .infosProducts {
@@ -10067,7 +10075,6 @@ span {
 #fashionProducts .row {
   margin-right: 0;
   margin-left: 0;
-  flex-wrap: nowrap;
 }
 
 .infosProducts {
@@ -10148,7 +10155,6 @@ span {
   height: 200px;
   position: relative;
   overflow: hidden;
-  border: 1px solid black;
   cursor: pointer;
   padding-right: 0;
   padding-left: 0;
@@ -10222,7 +10228,7 @@ span {
   background-image: url("../../public/img/products_mini/product-bag.jpg");
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 736px) {
   #fashionProducts h1 {
     text-align: center;
     margin: 15px;
@@ -10235,11 +10241,25 @@ span {
     margin-top: 30px;
     padding: 0;
   }
+  #fashionProducts .parentImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   #fashionProducts .row {
     text-align: center;
+  }
+  .parentImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
   }
 }
 
@@ -10341,16 +10361,19 @@ footer button:hover {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   footer .row {
     width: 100%;
   }
   .infoCust {
     text-align: center;
-    height: 521px;
+    padding: 10px 0px;
   }
   .infoCust h5 {
     height: 72px;
+  }
+  .infoCust p {
+    margin: 15px;
   }
 }
 

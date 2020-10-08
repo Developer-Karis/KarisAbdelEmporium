@@ -5,11 +5,15 @@
 
 .imgProducts{
     height: 250px;
-    width: 350px;
+    width: 320px;
     background-size: cover;
     padding: 20px;
-  
+    transition: 2s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
+
 
 .infosProducts {
     display: flex;
