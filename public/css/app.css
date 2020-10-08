@@ -10050,7 +10050,6 @@ span {
 #fashionProducts .row {
   margin-right: 0;
   margin-left: 0;
-  flex-wrap: nowrap;
 }
 
 .infosProducts {
@@ -10131,7 +10130,6 @@ span {
   height: 200px;
   position: relative;
   overflow: hidden;
-  border: 1px solid black;
   cursor: pointer;
   padding-right: 0;
   padding-left: 0;
@@ -10205,7 +10203,7 @@ span {
   background-image: url("../../public/img/products_mini/product-bag.jpg");
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 736px) {
   #fashionProducts h1 {
     text-align: center;
     margin: 15px;
@@ -10218,11 +10216,25 @@ span {
     margin-top: 30px;
     padding: 0;
   }
+  #fashionProducts .parentImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   #fashionProducts .row {
     text-align: center;
+  }
+  .parentImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
   }
 }
 
@@ -10324,16 +10336,19 @@ footer button:hover {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   footer .row {
     width: 100%;
   }
   .infoCust {
     text-align: center;
-    height: 521px;
+    padding: 10px 0px;
   }
   .infoCust h5 {
     height: 72px;
+  }
+  .infoCust p {
+    margin: 15px;
   }
 }
 
@@ -16460,3 +16475,4 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
+/*# sourceMappingURL=app.css.map */

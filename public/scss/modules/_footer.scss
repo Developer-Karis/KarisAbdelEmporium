@@ -56,20 +56,19 @@ footer {
     }
 }
 
-@media (min-width: 768) and (max-width: 1024) {
-    
-}
-
 // Tablets
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     footer .row {
         width: 100%;
     }
     .infoCust {
         text-align: center;
-        height: 521px;
+        padding: 10px 0px;
         h5 {
             height: 72px;
+        }
+        p {
+            margin: 15px;
         }
     }
 }

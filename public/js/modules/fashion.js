@@ -11,8 +11,6 @@ arrRow[3].style.display = "none";
 
 window.onload = imgOne();
 
-var stopTimeoutAuto;
-
 function imgOne() {
     arrRow[1].style.transition = "1.5s";
     arrRow[1].style.opacity = "0";
@@ -29,9 +27,9 @@ function imgOne() {
         arrRow[0].style.opacity = "1";
     }, 500);
 
-    // stopTimeoutAuto = setTimeout(() => {
-    //     carouselButtons[0].removeAttribute("checked");
-    //     carouselButtons[1].setAttribute("checked", '');
+    // setTimeout(() => {
+    //     carouselButtons[7].removeAttribute("checked");
+    //     carouselButtons[8].setAttribute("checked", '');
     //     imgTwo();
     // }, 5000);
 }
@@ -52,9 +50,9 @@ function imgTwo() {
         arrRow[1].style.opacity = "1";
     }, 500);
 
-    // stopTimeoutAuto = setTimeout(() => {
-    //     carouselButtons[1].removeAttribute("checked");
-    //     carouselButtons[2].setAttribute("checked", '');
+    // setTimeout(() => {
+    //     carouselButtons[8].removeAttribute("checked");
+    //     carouselButtons[9].setAttribute("checked", '');
     //     imgThree();
     // }, 5000);
 }
@@ -75,9 +73,9 @@ function imgThree() {
         arrRow[2].style.opacity = "1";
     }, 500);
 
-    // stopTimeoutAuto = setTimeout(() => {
-    //     carouselButtons[2].removeAttribute("checked");
-    //     carouselButtons[3].setAttribute("checked", '');
+    // setTimeout(() => {
+    //     carouselButtons[9].removeAttribute("checked");
+    //     carouselButtons[10].setAttribute("checked", '');
     //     imgFour();
     // }, 5000);
 }
@@ -98,29 +96,25 @@ function imgFour() {
         arrRow[3].style.opacity = "1";
     }, 500);
 
-    // stopTimeoutAuto = setTimeout(() => {
-    //     carouselButtons[3].removeAttribute("checked");
-    //     carouselButtons[0].setAttribute("checked", '');
+    // setTimeout(() => {
+    //     carouselButtons[10].removeAttribute("checked");
+    //     carouselButtons[7].setAttribute("checked", '');
     //     imgOne();
     // }, 5000);
 }
 
-function StopAuto() {
-    clearTimeout(stopTimeoutAuto);
-}
-
-arrButtons[0].addEventListener("click", () => {
+arrButtons[7].addEventListener("click", () => {
     imgOne();
 })
 
-arrButtons[1].addEventListener("click", () => {
+arrButtons[8].addEventListener("click", () => {
     imgTwo();
 })
 
-arrButtons[2].addEventListener("click", () => {
+arrButtons[9].addEventListener("click", () => {
     imgThree();
 })
 
-arrButtons[3].addEventListener("click", () => {
+arrButtons[10].addEventListener("click", () => {
     imgFour();
 })
