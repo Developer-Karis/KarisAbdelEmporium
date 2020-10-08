@@ -9784,7 +9784,7 @@ nav {
 .modal-content p {
   text-align: center;
   font-size: 50px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .close {
@@ -9819,7 +9819,7 @@ nav {
 .modal-content2 p {
   text-align: center;
   font-size: 50px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .connexionModal {
@@ -9914,6 +9914,11 @@ nav {
 
 .section3cent {
   margin-top: 40px;
+}
+
+.section3cent .row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .Living {
@@ -16500,3 +16505,4 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
+/*# sourceMappingURL=app.css.map */

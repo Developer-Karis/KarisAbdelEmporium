@@ -1,11 +1,15 @@
-.section3cent{
+.section3cent {
     margin-top: 40px;
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
-.Living{
+.Living {
     background-image: url(../../../public/img/services/service-1.jpg);
     height: 200px;
-  
+
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -14,27 +18,26 @@
     margin: 20px;
     margin-top: 0;
 }
-.Living h5{
+.Living h5 {
     font-size: 30px;
     text-align: center;
     color: white;
 }
-.Living h4{
+.Living h4 {
     width: 80%;
     border-bottom: solid 3px white;
     height: 20px;
     transition: 2s;
 }
 
-.Living h4:hover{
+.Living h4:hover {
     width: 10%;
     transition: 3s;
-
 }
-.sale{
+.sale {
     background-image: url(../../../public/img/services/service-2.jpg);
     height: 200px;
-   
+
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -42,27 +45,25 @@
     align-items: center;
     margin: 20px;
     margin-top: 0;
-    
 }
-.sale h5{
+.sale h5 {
     font-size: 30px;
     text-align: center;
     color: white;
-
 }
-.sale h4{
+.sale h4 {
     width: 80%;
     border-bottom: solid 3px white;
     height: 20px;
     transition: 2s;
 }
 
-.sale h4:hover{
+.sale h4:hover {
     transition: 3s;
     width: 10%;
 }
 
-.clothes{
+.clothes {
     background-image: url(../../../public/img/services/slider-3.jpg);
     height: 200px;
     background-size: cover;
@@ -73,19 +74,19 @@
     margin: 20px;
     margin-top: 0;
 }
-.clothes h5{
+.clothes h5 {
     font-size: 30px;
     text-align: center;
     color: white;
 }
-.clothes h4{
+.clothes h4 {
     width: 80%;
     border-bottom: solid 3px white;
     height: 20px;
     transition: 2s;
 }
 
-.clothes h4:hover{
+.clothes h4:hover {
     width: 10%;
     transition: 3s;
 }
