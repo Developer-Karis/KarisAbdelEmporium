@@ -11,21 +11,22 @@
 <body>
 
 
-    <div class="container">
-        <!-- titre -->
 
-        <h1 class="titreEmpo"> emporium.</h1>
+    <!-- titre -->
 
-        <!-- debut nav -->
+    <h1 id="home" class="titreEmpo"> emporium.</h1>
 
-        <nav>
+    <!-- debut nav -->
+
+    <nav>
+        <div class="container">
             <ul class="navRow">
-                <li>HOME</li>
-                <li>PRODUCT</li>
-                <li>BLOG</li>
-                <li>ELEMENTS</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <a href="#home"><li class="souligner">HOME</li</a>
+                <a href="#product"><li class="souligner">PRODUCT</li></a>
+                <a href="#blog"><li class="souligner">BLOG</li></a>
+                <a href="#elements"><li class="souligner">ELEMENTS</li></a>
+                <a href="#about"><li class="souligner">ABOUT</li></a>
+                <a href="#contact1"><li class="souligner">CONTACT</li></a>
                 <li>
                     <button class="modeblanc"></button>
                     <button class="modesombre"></button>
@@ -113,26 +114,26 @@
                 </li>
 
             </ul>
+        </div>
+    </nav>
 
-        </nav>
 
-    </div>
 
 
     <!-- BANNER -->
 
-    <section class="banner">
+    <section class="banner p-0">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 ">
                     <h3>Shop at</h3>
                     <img src="./public/img/logo.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui libero hic <br> architecto
                         beatae
                         iusto possimus nesciunt ab ipsam exercitationem.</p>
-                    <button>SALE ITEMS</button>
+                    <button href="#product">SALE ITEMS</button>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 p-0 ">
                     <img src="./public/img/slider-1.jpg" class="bannerimg" alt="">
                 </div>
             </div>
@@ -161,19 +162,23 @@
 
     <!-- Recents Products  -->
 
-    <div class="container">
+    <div id="product" class="container">
 
-        <h3 class="titreProduct">Recents Products</h3>
+        <h3  class="titreProduct">Recents Products</h3>
 
         <div class="row">
-            <div class="col-4">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
                 <div class="center">
                     <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="imgProducts" alt="">
                     <h5>Luxry Sofa</h5>
                     <span>$600.00</span>
                 </div>
             </div>
-            <div class="col-4">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
                 <div class="center">
                     <img src="./public/img/products_mini/product-gloves.jpg" class="imgProducts" alt="">
                     <div class="infosProducts">
@@ -186,7 +191,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
 
                 <div class="center">
                     <img src="./public/img/products_mini/product-cups.jpg" class="imgProducts" alt="">
@@ -200,7 +206,8 @@
 
 
         <div class="row">
-            <div class="col-4">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
                 <div class="center">
                     <img src="./public/img/products_mini/product-bag.jpg" class="imgProducts" alt="">
                     <div class="infosProducts">
@@ -214,7 +221,8 @@
                 </div>
             </div>
 
-            <div class="col-4">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
                 <div class="center">
                     <img src="./public/img/products_mini/product-tshitr.jpg" class="imgProducts" alt="">
                     <h5>Minimal T-shirt</h5>
@@ -233,21 +241,21 @@
 
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
                 <div class="center">
                     <img src="./public/img/products_mini/product-modern-sofa.jpg" class="imgProducts" alt="">
                     <h5>Modern Sofa</h5>
                     <span>$900.00</span>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
                 <div class="center">
                     <img src="./public/img/products_mini/product-bed.jpg" class="imgProducts" alt="">
                     <h5>Bed Linen</h5>
                     <span>$79.00</span>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
                 <div class="center">
                     <img src="./public/img/products_mini/product-shoes.jpg" class="imgProducts" alt="">
                     <h5>Minimal Shoes</h5>
@@ -258,7 +266,7 @@
     </div>
 
     <!-- Discover Products -->
-    <section class="mt-5">
+    <section id="blog" class="mt-5">
         <div id="bgDiscover">
             <div id="discover">
                 <h1>Discover Thousands of Great Products</h1>
@@ -271,7 +279,7 @@
     <section id="fashion">
         <div id="fashionProducts">
             <!-- Title Fashion Products -->
-            <div>
+            <div id="elements">
                 <h1>Hot Fashion Products</h1>
             </div>
             <!-- Fashion Products -->
@@ -516,7 +524,7 @@
     </section>
 
     <!-- Customers Shopping -->
-    <section>
+    <section id="about">
         <div class="infoCustomers">
             <div class="row">
                 <div class="col-lg-4 col-sm-3 col-md-4">
@@ -557,7 +565,7 @@
     </section>
 
     <!-- Footer -->
-    <section>
+    <section id="contact1">
         <footer>
             <div class="row">
                 <div class="col-lg-4 col-sm-3 col-md-4">

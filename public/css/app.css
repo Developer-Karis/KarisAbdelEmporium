@@ -9723,6 +9723,15 @@ nav {
   list-style: none;
 }
 
+.navRow a {
+  text-decoration: none;
+  color: black;
+}
+
+.navRow .souligner:hover {
+  border-bottom: solid 2px gray;
+}
+
 .modeblanc {
   height: 15px;
   background-color: white;
@@ -9841,6 +9850,18 @@ nav {
     margin: 30px;
     font-size: 15px;
   }
+}
+
+.stickyNav nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 33;
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px black;
 }
 
 .banner {
@@ -9989,13 +10010,9 @@ nav {
 
 .imgProducts {
   height: 250px;
-  width: 400px;
+  width: 350px;
   background-size: cover;
   padding: 20px;
-}
-
-.imgProducts .h5 {
-  margin-top: 2000px;
 }
 
 .infosProducts {
