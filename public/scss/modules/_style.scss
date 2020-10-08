@@ -1,8 +1,8 @@
-// section 1 ( titre et  nav)
+// Discover Products
+@import "./discover";
 
-<<<<<<< HEAD
-@import "../modules/section1";
-=======
+// section 1 
+
 @import "../modules/section1";
 
 // section 2 banner
@@ -16,4 +16,12 @@
 // section 3 living Room Sale items Clothes
 
 @import "../modules/section4";
->>>>>>> Abdel
+
+// Hot Fashion Products
+@import "./fashion";
+
+// Infos Customers Shopping
+@import "./infosCustomers";
+
+// Footer
+@import "./footer";

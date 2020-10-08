@@ -1,0 +1,66 @@
+* {
+    scroll-behavior: smooth;
+}
+
+// Background Section Discover
+
+#bgDiscover {
+    background-image: url("../img/cta-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+
+// Content Discover title and button
+
+#discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 320px;
+    h1 {
+        color: white;
+        font-size: 60px;
+    }
+    a {
+        text-decoration: none;
+        background-color: #ff5252;
+        text-transform: uppercase;
+        padding: 8px 15px;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        &:hover {
+            background-color: white;
+            color: #ff5252;
+        }
+    }
+}
+
+// Media Query
+
+// Smartphone
+@media screen and (max-width: 640px) {
+    #discover {
+        padding-top: 200px;
+        h1 {
+            text-align: center;
+            margin: 15px;
+        }
+    }
+}
+
+// Tablets
+@media (min-width: 768px) and (max-width: 1280px) {
+    #discover {
+        padding-top: 280px;
+        h1 {
+            text-align: center;
+            margin: 15px;
+        }
+    }
+}

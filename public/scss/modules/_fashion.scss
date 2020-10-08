@@ -1,0 +1,186 @@
+#fashionProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 120px;
+    h1 {
+        margin-bottom: 50px;
+    }
+    img {
+        height: 212.63px;
+        width: 270px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+.infosProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    span {
+        color: #ff5252;
+        font-weight: bold;
+    }
+    #infos {
+        text-align: center;
+        margin: 20px;
+    }
+    .salePrice {
+        color: grey;
+        text-decoration: line-through;
+    }
+}
+
+.infosProducts1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px !important;
+    span {
+        color: #ff5252;
+        font-weight: bold;
+    }
+    h5,
+    span {
+        position: relative;
+    }
+}
+
+#sale {
+    border-radius: 100%;
+    background-color: #ff5252;
+    padding: 30px 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.carouselButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    input {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.carous {
+    justify-content: center;
+}
+
+.imagesCarous {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.parentImg {
+    width: 250px;
+    margin: 20px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.parentImg:hover .imagesCarous {
+    transform: scale(1.3);
+}
+
+// Background Carousel
+
+.bg-one {
+    background-image: url("../../public/img/products_mini/product-luxry-sofa.jpg");
+}
+.bg-two {
+    background-image: url("../../public/img/products_mini/product-gloves.jpg");
+}
+.bg-three {
+    background-image: url("../../public/img/products_mini/product-cups.jpg");
+}
+.bg-four {
+    background-image: url("../../public/img/products_mini/product-bag.jpg");
+}
+.bg-five {
+    background-image: url("../../public/img/products_mini/product-bed.jpg");
+}
+.bg-six {
+    background-image: url("../../public/img/products_mini/product-modern-sofa.jpg");
+}
+.bg-seven {
+    background-image: url("../../public/img/products_mini/product-plates.jpg");
+}
+.bg-eight {
+    background-image: url("../../public/img/products_mini/product-tshitr.jpg");
+}
+.bg-nine {
+    background-image: url("../../public/img/products/product-bag-2-700x500.jpg");
+}
+.bg-ten {
+    background-image: url("../../public/img/products/product-jacket-700x500.jpg");
+}
+.bg-eleven {
+    background-image: url("../../public/img/products/product-shoes-700x500.jpg");
+}
+.bg-twelve {
+    background-image: url("../../public/img/products/product-tshitr-white-700x500.jpg");
+}
+.bg-thirteen {
+    background-image: url("../../public/img/products_mini/product-luxry-sofa.jpg");
+}
+.bg-fourteen {
+    background-image: url("../../public/img/products_mini/product-gloves.jpg");
+}
+.bg-fifteen {
+    background-image: url("../../public/img/products_mini/product-cups.jpg");
+}
+.bg-sixteen {
+    background-image: url("../../public/img/products_mini/product-bag.jpg");
+}
+
+// Media Query
+
+// Smartphone
+@media screen and (max-width: 640px) {
+    #fashionProducts {
+        h1 {
+            text-align: center;
+            margin: 15px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+            padding: 0;
+        }
+    }
+}
+
+// Tablets
+@media (min-width: 768px) and (max-width: 1024px) {
+    #fashionProducts .row {
+        text-align: center;
+    }
+}
+
+// @media (min-width: 1024px) and (max-width: 1366px) {
+
+// }
