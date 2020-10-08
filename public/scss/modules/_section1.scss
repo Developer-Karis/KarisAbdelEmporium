@@ -2,6 +2,13 @@
     text-align: center;
     margin: 50px;
 }
+<<<<<<< HEAD
+=======
+
+nav{
+    margin-bottom: 40px;
+}
+>>>>>>> Abdel
 .navRow{
     display: flex;
     justify-content: space-around;
@@ -24,4 +31,136 @@
     color : white;
     border: solid 1px ;
     height: 30px;
+<<<<<<< HEAD
 }
+=======
+}
+.navPlus{
+    display: none;
+}
+
+// Modal
+
+.center{
+    text-align: center;
+   
+}
+
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    left: 0;
+    border: 1px solid #888;
+    width: 35%;
+    height: 350px;
+}
+
+.modal-content p {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lato';
+}
+
+.close {
+    color: #aaa;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 0 10px 0 0;
+    font-weight: bold;
+}
+
+.form-control{
+    width: 400px!important;
+    margin: auto!important;
+}
+
+.inscription{
+    border: solid 1px black;
+    font-size: 25px !important;
+    width: 150px!important;
+}
+
+
+// Modal 2
+
+
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    height: 500px;
+}
+
+
+.modal-content2 p {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lato';
+    
+}
+
+// Media Query
+
+    // Tablette
+
+@media (min-width: 768px) and (max-width: 1280px){
+
+
+    // modal
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        border: 1px solid #888;
+        width: 50%;
+        height: 350px;
+    }
+
+    .form-control{
+        width: 200px!important;
+    }
+    
+    .inscription{
+        border: solid 1px black;
+        font-size: 25px !important;
+        width: 150px!important;
+    }
+    
+}
+
+    // smartphone
+
+@media (max-width: 767px){
+
+    .navRow{
+        display: none;
+    }
+    .navPlus{
+        display: flex!important;
+        justify-content: flex-end;
+        margin: 30px;
+        font-size: 15px;
+    }
+
+    // page navbar
+
+
+}
+
+>>>>>>> Abdel

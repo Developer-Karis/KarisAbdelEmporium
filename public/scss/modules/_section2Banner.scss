@@ -1,0 +1,42 @@
+// / BANNER /
+.banner {
+    margin-top: 30px;
+    background-position: 75%;
+    height: 55vh;
+    background-size: 33%;
+    background-color: whitesmoke;
+    margin-top: 1em;
+    padding-left: 13em; 
+
+}
+
+.banner h3 {
+    color: red;
+    padding-top: 3em;
+    font-size: 2.5em;
+}
+
+.banner img {
+    width: 28%
+}
+
+.banner p {
+    padding-top: 0.5em;
+}
+
+.banner button {
+    padding: 1em 2em;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 0.8em;
+}
+
+.bannerimg{
+    margin-top: 20px;
+    background-position: 75%;
+    height: 400px;
+    width: 400px!important;
+    background-size: 100%!important;
+}
